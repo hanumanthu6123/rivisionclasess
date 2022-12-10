@@ -1,1 +1,77 @@
+maven goals:::::
+mvn package ------- artifact generate
+mvn clean package ----old artifact remove 
+mvn compile ---- source code 
+mvn test ---- unit testcases
+mvn install---- install the package into our local system.
+<package>war</package>
+-------------------------
+linux Commands::::
 
+touch filename
+mkdir filename
+cd dirname
+/ --- administrative root 
+/etc---- configuration
+/home ----- users
+cat /etc/passwd
+tree dirname 
+apt install packagename / yum install packagename
+sudo -i ---root login
+vi or nano 
+vi filename ----shilf+i -----data type ----press esc and then :wq
+cat filename > filenname2
+ls ---- ls -la ------ ls -lrt
+cp source destination
+mv source destination ---cut + paste ---mv file1 /root/file2
+find /root -name file1 
+find /home -user swathi
+permissions ------ rwx--r=4,w=2,e=1 
+chmod 777 file1
+chmod -R 777 dirname
+------
+-rwxrwxrwx user user file1 12-10-2022 09:50
+chown root:root file1
+-rwxrwxrwx root root file1 12-10-2022 09:50
+----------------------------------------softlink and hardlink-------
+- softlink is shortcut file , hardlink backup file
+ln -s source filename.slink
+ln source filename.slink
+--- hard link not allowed for directories
+--------------------------
+head ---- head -20 filename
+tail ---tail -20 filename
+servers will be on utc timings 
+date , cal , cal 1995
+-------
+grep ::::global regular expression
+
+grep username /etc/passwd
+cat filename | grep -i sample
+Sample
+cat filename | grep -v sample
+cat file1
+123
+123
+234
+apple
+biscuit
+sort -u file1
+123
+234
+sort -d file1
+sort -h file1
+useradd username -----passwd username 
+visudo ----- root permissions add for user
+/etc/sshd
+passwordauthentication yes
+systemctl restart sshd
+userdel username
+sed ---- stream editor
+sed 's/searchword/replaceword/g' filename > sed-edit-output
+netstat -ntulp | grep 8080
+dpkg -l | grep mysql
+top ---- cpu , memory display
+df -h ----- filensystem info
+free -h ------ memory details
+cat /etc/os-release
