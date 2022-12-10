@@ -1,1 +1,55 @@
+git clone reponame
+touch filename
+git add .
+git commit -m "commitmsg"
+git push origin branchname
+git pull ==== git fetch + git merge 
+git branch 
+git branch branchname
+git branch -d branchname
+git checkout branchname
+git checkout -b branchname ( it will create branch and automatically enter into branch )
+git status 
+
+git config --global alias.swathi "git status"
+git status 
+git config --global --unset alias.swathi
+git config --list 
+git config --global user.name "username"
+git config --global user.email "email@gmail.com"
+touch file1 file2 file3 
+git log
+git log -10
+git log  --oneline -10
+git log --since=2022-11-07 --oneline -100
+git log --since=2022-11-07 --until=2022-11-10 --oneline -10
+git reset --soft commitid ( reverting the commitid from local repo to staging area)
+git reset head filename( stage to workspace)
+git reset --mixed commitid ( local repo to workspace)
+git merge branchname
+git show commitid
+
+branching strategies ? 
+
+--------------------------------------------------------------------
+stash memory ( temporary storage area )
+ git stash save "stash1" ===== stage changes 
+git stash list
+git stash show -p stash{0}
+git stash drop 
+git stash list
+git stash pop stash{1}
+git stash apply .
+
+--------------------------
+git branch -m branch1(old) branch2(new)  
+git commit --amend -m "fixing 500 error in composer"
+how to clone specific branch in git ????
+git clone -b branchname --single-branch repolink
+
+git branch -a 
+git branch -r
+
+
+
 
