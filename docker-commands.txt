@@ -1,0 +1,45 @@
+DOCKER::::
+--------------
+docker --version
+docker pull imagename:versionname
+touch dockerfile
+docker build -t .
+docker run -it -d imageid
+docker exec -it contid /bin/bash
+exit
+docker images
+docker ps -a 
+docker login 
+ps -ef | grep docker
+which docker 
+docker info 
+echo $SHELL 
+docker run -d -it --name mycontainer contid /bin/bash -p 80:80
+docker start contid
+docker stop contid
+docker restart contid
+docker rm contid -----> we can't remove running container 
+docker rmi imageid/imagename:tag
+docker ps -q -----> show's only contid's
+docker inspect contid
+docker history imageid
+---------------------------------
+dockerfile-----
+
+FROM tomcat
+RUN mkdir dirname
+WORKDIR dirname
+RUN touch filename
+COPY filepath /opt
+EXPOSE 80
+ENTRYPOINT["echo", "file"] 
+ADD abc.tar /opt
+
+
+ 
+
+
+
+
+
+
