@@ -9,8 +9,9 @@ git branch branchname
 git branch -d branchname
 git checkout branchname
 git checkout -b branchname ( it will create branch and automatically enter into branch )
-git status 
-
+git status
+git branch --set-upstream-to=origin/<branch> master   (branch clone in local)
+ 
 git config --global alias.swathi "git status"
 git status 
 git config --global --unset alias.swathi
